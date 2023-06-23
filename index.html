@@ -1,0 +1,48 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This survey form represents an exercise in building a simple form in html and styling it in CSS. </p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org"> 
+<fieldset> 
+  <label id="name-label" for="name"> Name <input class="wide" id="name" type="text" required placeholder="John"/> </label>
+  <label id="email-label" for="email">Email<input class="wide" id="email" type="email" required placeholder="john@smith.com"/>  </label>
+  <label id="number-label" for="age">Age
+(optional)<input class="wide" id="number" type="number" min="18" max="120" placeholder="18"/> </label>
+</fieldset>
+<fieldset> <label for="dropdown">Rate this form:
+  <select id="dropdown"> 
+    <option value=""> (select rating) </option>
+    <option value="1"> 1 </option>
+    <option value="2"> 2 </option>
+    <option value="3"> 3 </option>
+    <option value="4"> 4 </option>
+    <option value="5"> 5 </option>
+  </select>
+  </label> 
+ </fieldset>
+ <fieldset>
+   <label for="like"> <input id="like "type="radio" name="form" value="+"/>I like filling out the forms.</label>
+   <label for="dislike"><input id="dislike" type="radio" name="form" value="-"/>I dislike filling out the forms.</label>
+  </fieldset>
+  <fieldset> 
+    <label for="like-survey" > <input id="like-survey" type="checkbox" value="+"/> This survey is awesome. </label>
+    <label for="more-survey"> <input id="more-survey" type="checkbox" value="more"/>  Send me more surveys. </label>
+    <label for="more-mail"> <input id="more-mail" type="checkbox" value="more-mail"/>  I'd like to receive emails.
+ </label>
+  </fieldset>
+  <fieldset> 
+    <label>Write a comment:
+      <textarea rows="3" cols="30"
+      placeholder="I like this survey, because..."> </textarea>
+    </label>
+  </fieldset>
+    <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
